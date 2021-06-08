@@ -1,0 +1,184 @@
+{
+  "auth": {
+    "login": {
+      "form": {
+        "fields": {
+          "confirmCode": {
+            "label": "Код из  СМС",
+            "sendSms": "Получить код по СМС",
+            "helperText": "Неправильный код"
+          },
+          "phone": {
+            "label": "Номер телефона"
+          }
+        },
+        "registerLink": "Зарегистрироваться",
+        "title": "Авторизация"
+      }
+    },
+    "loginPage": {
+      "btnSignin": "Войти",
+      "btnSingup": "Нет аккаунта?",
+      "formDescription": "Авторизация в личный кабинет",
+      "formEmailLabel": "Почта/Телефон",
+      "formPasswordLabel": "Пароль",
+      "formTitle": "Авторизация",
+      "pageTitle": "Авторизация"
+    },
+    "register": {
+      "success": "Пользователь успешно зарегистрирован",
+      "form": {
+        "continue": "Продолжить",
+        "fields": {
+          "email": {
+            "label": "E-mail",
+            "helperText": "Неправильный E-mail",
+            "placeholder": "Электронная почта"
+          },
+          "firstname": {
+            "label": "Имя",
+            "helperText": "Введите имя"
+          },
+          "lastname": {
+            "label": "Фамилия",
+            "helperText": "Неправильная фамилия"
+          },
+          "confirmCode": {
+            "label": "Код потверждения",
+            "helperText": "Неверный код"
+          },
+          "organization": {
+            "label": "Данные организации",
+            "helperText": "Невалидная организация"
+          },
+          "company": {
+            "description": "ИНН {{inn}}, КПП:{{kpp}},Адрес:{{address}}"
+          },
+          "phone": {
+            "confirm": "Подтвердить",
+            "label": "Номер телефона",
+            "helperText": "Неправильный номер телефона"
+          },
+          "region": {
+            "label": "Регион"
+          },
+          "userCompany": {
+            "label": "Компания/ИП"
+          },
+          "userSingle": {
+            "label": "Частное лицо"
+          }
+        },
+        "personalData": {
+          "content": "Указывайте ваши реальные ФИО. Мы заботимся о безопасности наших пользователей и блокируем людей с вымышленными данными",
+          "title": "Личные данные"
+        },
+        "title": "Регистрация, шаг"
+      }
+    },
+    "logout": "unhandled translation"
+  },
+  "common": {
+    "addButton": "Добавить {{what}}",
+    "drawer": {
+      "equipmentWork": "Работа на технику",
+      "newOrder": "Новая заявка",
+      "orders": "Заявки",
+      "rentalEquipment": "Аренда техники",
+      "support": "Поддержка",
+      "lk": "Личный кабинет",
+      "org": "Организация",
+      "employers": "Сотрудники",
+      "personal": "Личные данные",
+      "feedback": "Обработная связь",
+      "machine": "Техника",
+      "requests": "Заказы",
+      "logout": "Выход",
+      "logoutConfirm": "Вы уверены что хотите выйти ?"
+    },
+    "cancel": "Отменить",
+    "yes": "Да",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться",
+    "welcome": "Добро пожаловать в личный кабинет Рентал Клаб",
+    "welcomeGpn": "Сервис аренды спецтехники от ГПН",
+    "welcomeDescription": {
+      "end": "Для Заказчиков/Поставщиков/Диспетчеров",
+      "start": "Сервис аренда строительной техники онлайн"
+    },
+    "save": "Сохранить",
+    "welcome : 'common": {
+      "welcomeGpn'": "default"
+    }
+  },
+  "errors:common": {
+    "pageNotFound": "Страницы не существует"
+  },
+  "profile": {
+    "home": {
+      "title": "{{userName}}, добрый день!"
+    },
+    "stats": {
+      "proposal": "Вы откликнулись на {{val}} заявок",
+      "entries": "Вы создали {{val}} заявок на технику"
+    },
+    "organization": {
+      "title": "Данные организации",
+      "list": {
+        "header": "default"
+      }
+    },
+    "vehicle": {
+      "title": "Машины"
+    },
+    "employers": {
+      "title": "Сотрудники"
+    },
+    "user": {
+      "title": "Пользователь"
+    },
+    "personal": {
+      "title": "Личные данные",
+      "form": {
+        "fields": {
+          "notifications": {
+            "placeholder": "Получать автоматические звонки о заявках",
+            "label": "Настройки уведомлений"
+          },
+          "email": {
+            "label": "E-mail",
+            "helperText": "Неправильный E-mail",
+            "placeholder": "Электронная почта"
+          },
+          "firstname": {
+            "label": "Имя",
+            "helperText": "Введите имя"
+          },
+          "lastname": {
+            "label": "Фамилия",
+            "helperText": "Неправильная фамилия"
+          },
+          "phone": {
+            "confirm": "Подтвердить",
+            "label": "Номер телефона",
+            "helperText": "Неправильный номер телефона"
+          }
+        }
+      }
+    }
+  },
+  "key": {
+    "auth": {
+      "fields": {
+        "phone": {
+          "helper": "default"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "name": "default"
+    }
+  ]
+}

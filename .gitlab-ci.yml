@@ -1,0 +1,56 @@
+image: node:latest
+stages:
+  - build
+  - test
+  - preprod
+  - production
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+before_script:
+  - rm -rf package-lock.json
+  - yarn
+ 
+
+frontend build:
+  stage: build
+  script:
+    - yarn build
+
+frontend lint:style:
+  stage: test
+  script:
+    - yarn lint
+
+frontend test:
+  stage: test
+  script:
+    - yarn test
+
+frontend test:e2e:
+  stage: test
+  script:
+    - yarn test
+
+frontend test:cov:
+  stage: test
+  script:
+    - yarn test
+
+pre:production build:
+  stage: preprod
+  when: on_success
+  script:
+    - yarn
+    - yarn build
+production:
+  stage: production
+  when: on_success
+  only:
+    - master
+  script:
+    - yarn
+    - yarn build

@@ -1,0 +1,153 @@
+{
+  "common": {
+    "drawer": {
+      "rentalEquipment": "Equipment rental",
+      "newOrder": "New order",
+      "orders": "Orders",
+      "equipmentWork": "Work on the equipment",
+      "support": "Support",
+      "lk": "Personal Area",
+      "org": "Organizations",
+      "customers": "Workers",
+      "feedback": "Feedback",
+      "personal": "Personal data",
+      "machine": "default",
+      "employers": "default",
+      "logout": "default",
+      "logoutConfirm": "default",
+      "requests": "default"
+    },
+    "welcomeDescription": {
+      "start": "Construction equipment rental service online",
+      "end": "For Customers/Suppliers/Managers"
+    },
+    "welcome": "Welcome to the Rental Club personal account",
+    "signIn": "Enter",
+    "signUp": "Register",
+    "save": "default",
+    "yes": "default",
+    "cancel": "default",
+    "welcome : 'common": {
+      "welcomeGpn'": "default"
+    }
+  },
+  "auth": {
+    "login": {
+      "form": {
+        "title": "Authorization",
+        "fields": {
+          "confirmCode": {
+            "label": "Text message code",
+            "sendSms": "Get the code by SMS"
+          }
+        },
+        "registerLink": "Register"
+      }
+    },
+    "register": {
+      "form": {
+        "title": "Registration, step",
+        "personalData": {
+          "title": "Personal data",
+          "content": "Specify your real full name. We care about the security of our users and block people with fictitious data"
+        },
+        "fields": {
+          "firstname": {
+            "helperText": "Guchi gang",
+            "label": "First Name Last"
+          },
+          "lastname": {
+            "helperText": "Guchi gang",
+            "label": "Name"
+          },
+          "email": {
+            "helperText": "Guchi gang",
+            "label": "E-mail",
+            "placeholder": "unhandled translation"
+          },
+          "phone": {
+            "helperText": "Guchi gang",
+            "label": "Phone number",
+            "confirm": "Confirm"
+          },
+          "region": {
+            "label": "Region"
+          },
+          "userCompany": {
+            "label": "Company / sole proprietor"
+          },
+          "userSingle": {
+            "label": "A private person"
+          },
+          "confirmCode": {
+            "helperText": "default",
+            "label": "default"
+          },
+          "organization": {
+            "label": "default"
+          }
+        },
+        "continue": "Continue"
+      }
+    }
+  },
+  "key": {
+    "auth": {
+      "fields": {
+        "phone": {
+          "helper": "unhandled translation"
+        }
+      }
+    }
+  },
+  "errors:common": {
+    "pageNotFound": "unhandled translation"
+  },
+  "profile": {
+    "organization": {
+      "title": "unhandled translation",
+      "list": {
+        "header": "default"
+      }
+    },
+    "vehicle": {
+      "title": "unhandled translation"
+    },
+    "user": {
+      "title": "default"
+    },
+    "personal": {
+      "title": "Personal",
+      "form": {
+        "fields": {
+          "name": {
+            "helperText": "default"
+          },
+          "email": {
+            "helperText": "default",
+            "label": "default"
+          },
+          "notifications": {
+            "placeholder": "default"
+          },
+          "phone": {
+            "helperText": "default",
+            "label": "default"
+          },
+          "firstname": {
+            "helperText": "default"
+          },
+          "lastname": {
+            "helperText": "default",
+            "label": "default"
+          }
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "name": "default"
+    }
+  ]
+}

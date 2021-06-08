@@ -1,0 +1,33 @@
+hooks:
+  afterAllFileWrite:
+    - eslint --fix
+overwrite: true
+schema: "https://api.rc.mindcode.ru/v2/graphql"
+generates:
+  # Get schemas from server
+  src/schema/queries/autogenerate/schemas.tsx:
+    documents: 'src/schema/queries/**/**.gql'
+    plugins:
+      - typescript
+  # Create operations based on queries
+  src/schema/queries/autogenerate/operations.tsx:
+    documents: 'src/schema/queries/**/**.gql'
+    preset: import-types
+    presetConfig:
+      typesPath: ./schemas
+    plugins:
+      - typescript-operations
+  # 1. Export GraphQL documents
+  # 2. React interface
+  src/schema/queries/autogenerate/hooks.tsx:
+    documents: 'src/schema/queries/**/**.gql'
+    preset: import-types
+    presetConfig:
+      typesPath: ./operations
+    plugins:
+      - typescript-react-apollo
+    config:
+      # Optionals
+      withHOC: false
+      withComponent: false
+      withHooks: true
