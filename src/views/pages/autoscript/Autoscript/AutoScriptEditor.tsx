@@ -14,7 +14,8 @@ import IconButton from '@material-ui/core/IconButton';
 import uuid from 'uuid';
 import axios from 'axios';
 import { endpoints } from 'config';
-import { useParams } from 'react-router';
+import { useParams, useHistory } from 'react-router';
+
 
 import { SSL_OP_NETSCAPE_CHALLENGE_BUG } from 'node:constants';
 import _ from 'lodash';
@@ -398,16 +399,19 @@ const AutoScriptForm = ({
     method: '',
   });
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <Form
       onSubmit={(data) => {
         if (methodTyping === 'new') {
           axios.post(endpoints.script.create, data).then(() => {
+            history.push('/dashboard/scripts');
             console.log('ok');
           });
         } else {
           axios.put(endpoints.script.create + methodTyping).then(() => {
+            history.push('/dashboard/scripts');
             console.log('ok');
           });
         }
